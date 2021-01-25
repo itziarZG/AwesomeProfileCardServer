@@ -1,1 +1,1 @@
-web:node src/index.js
+web: cd web && npm run build && rm -rf ../server/public && mv build ../server/public && cd ../server && npm start"
