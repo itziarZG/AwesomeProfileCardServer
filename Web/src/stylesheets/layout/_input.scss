@@ -1,0 +1,35 @@
+.label {
+  display: block;
+  margin-bottom: 7px;
+  font-family: $font-main;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-font-secondary;
+}
+
+.fill__input {
+  display: block;
+  font-family: $font-main;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-input;
+  border: 1px solid $color-tertiary;
+  width: 281px;
+  height: 30px;
+  margin-bottom: 13px;
+  padding-left: 9px;
+  outline-color: $color-backgroun-primary;
+
+  @media all and(min-width:768px) {
+    width: 329px;
+    height: 30px;
+  }
+
+  &::placeholder {
+    color: $color-input;
+  }
+}
+
+// &__name {
+//   margin-top: 25px;
+// }

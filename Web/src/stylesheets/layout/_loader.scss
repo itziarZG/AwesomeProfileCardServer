@@ -1,0 +1,22 @@
+.loader {
+  position: relative;
+  // top: -90px;
+  left: calc(50% - 45px);
+  width: 90px;
+  height: 90px;
+  border: 10px solid #eee;
+  border-top: 10px solid #666;
+  border-radius: 50%;
+  animation-name: girar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

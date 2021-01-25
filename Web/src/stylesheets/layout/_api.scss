@@ -1,0 +1,79 @@
+@import "../core/variables";
+
+.card {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  // padding: 0px 20px 30px 20px;
+
+  &__hidden {
+    display: none;
+  }
+
+  &__created {
+    width: 280px;
+    border-top: 1px #d8d8d8 solid;
+    border-bottom: 1px #d8d8d8 solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media all and(min-width:768px) {
+      width: 329px;
+    }
+  }
+
+  &__created-title {
+    font-family: $font-main;
+    font-size: 18px;
+    font-weight: 600;
+    color: $color-button;
+    margin: 20px 0 5px 8px;
+  }
+
+  &__created-link {
+    text-decoration: none;
+    width: 292px;
+    font-family: $font-main;
+    font-size: 12px;
+    font-weight: 600;
+    color: $color-backgroun-primary;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+.button__twitter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 204px;
+  height: 30px;
+  background-color: #00a0f5;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  margin: 10px 0 30px 0;
+  text-decoration: none;
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.button__twitter-icon {
+  margin: 0 9.5px 0 10.5px;
+  width: 18px;
+  height: 18px;
+  font-size: 18px;
+  color: $color-white;
+}
+
+.button__twitter-title {
+  height: 20px;
+  font-family: $font-main;
+  font-size: 14px;
+  line-height: 1.43;
+  color: $color-white;
+  margin-right: 9px;
+}

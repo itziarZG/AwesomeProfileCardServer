@@ -1,0 +1,119 @@
+@import "../core/variables";
+
+.design__palette-title {
+  color: $color-button;
+  font-size: 14px;
+  font-family: $font-main;
+  margin: 22px 0 0 20px;
+  text-transform: uppercase;
+}
+
+.design__palette {
+  width: 281px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+
+  @media all and(min-width:768px) {
+    width: 329px;
+  }
+}
+
+.design__palette-color {
+  margin-top: 28px;
+  display: flex;
+}
+
+.fill__form {
+  width: 281px;
+  padding-bottom: 17px;
+
+  @media all and(min-width:768px) {
+    width: 329px;
+  }
+}
+
+button[disabled] {
+  background: #d4d4d4;
+  &:hover {
+    transform: scale(1);
+  }
+}
+
+.create-card__button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+}
+.create-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 220px;
+  height: 50px;
+  background-color: $color-backgroun-primary;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  border: none;
+  border-radius: 12px;
+  margin: 30px 55px 30px 51px;
+  outline-style: none;
+  padding: 0 12px;
+  &__color {
+    background-color: #d5d5d5;
+  }
+}
+.create-card:hover {
+  transform: scale(1.03);
+}
+
+.button__created-title {
+  font-size: 18px;
+  font-family: $font-main;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  margin-right: 8px;
+  /* margin: 13px 13px 13px 0px; */
+  display: flex;
+}
+
+.created-card__button-icon {
+  font-size: 24px;
+  margin: 20px 4px 20px 8px;
+  color: white;
+}
+​.loader {
+  position: relative;
+  top: -90px;
+  left: 110px;
+  width: 90px;
+  height: 90px;
+  border: 10px solid #eee;
+  border-top: 10px solid #666;
+  border-radius: 50%;
+  animation-name: girar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.loading {
+  width: 40%;
+  height: 20vh;
+  background-color: cadetblue;
+  position: absolute;
+  top: 40vh;
+  left: 30%;
+  text-align: center;
+  line-height: 6em;
+}
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

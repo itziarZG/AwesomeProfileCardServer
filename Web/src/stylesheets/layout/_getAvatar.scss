@@ -1,0 +1,36 @@
+.action {
+  display: flex;
+  margin-bottom: 7px;
+
+  &__upload-btn {
+    background: $color-backgroun-primary;
+    width: 140px;
+    height: 30px;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    border: none;
+    color: $color-white;
+    font-family: $font-main;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    outline-color: $color-backgroun-primary;
+  }
+
+  &__hiddenField {
+    /* Ocultamos el input de tipo "file" porque no podemos 
+    darle los estilos que queremos */
+    display: none;
+  }
+}
+
+.profile__preview {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid $color-tertiary;
+  width: 30px;
+  height: 30px;
+  margin-right: 70px;
+  margin-left: 20px;
+}

@@ -1,0 +1,19 @@
+.header {
+  // padding: 31px 0 30px 40px;
+  height: 111px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media all and (min-width: 768px) {
+    justify-content: flex-start;
+  }
+
+  &__photo {
+    height: 70px;
+    width: 241px;
+    @media all and (min-width: 768px) {
+      margin: 31px 527px 30px 40px;
+    }
+  }
+}

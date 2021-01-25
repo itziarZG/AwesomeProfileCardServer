@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/-MRdizuUOVZxBSN-N-E9 -->
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Awesome Profile Cards</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="./views/TemplateCard_files/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link href="./views/TemplateCard_files/css" rel="stylesheet"> -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .viewfinder {
+      background: linear-gradient(#bfcdd0, #dde9ed);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .viewfinder__card {
+      position: relative;
+      background-color: #ffffff;
+      width: 240px;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .viewfinder__photo {
+      height: 200px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .viewfinder__card-title {
+      display: flex;
+    }
+
+    .viewfinder__card-title-titlebox {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .viewfinder__card-title-rectangule {
+      height: 42px;
+      width: 5px;
+      background-color: #438792;
+      margin: 20px 15px 0 0;
+    }
+
+    .viewfinder__card-title-name {
+      padding: 20px 14px 5px 0px;
+      font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', sans-serif;
+      font-size: 18px;
+      line-height: 20px;
+      color: #114e4e;
+    }
+
+    .viewfinder__card-title-job {
+      padding: 0 14px 5px 0px;
+      font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      color: #54585a;
+      font-weight: normal;
+    }
+
+    .viewfinder__icons {
+      display: flex;
+      align-items: center;
+      height: 52px;
+      border-bottom: 2px solid rgba(67, 135, 146, 0.2);
+    }
+
+    .viewfinder__icons-box {
+      margin-left: 10px;
+      border-radius: 22px;
+      border: 2px solid #a2deaf;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #114e4e;
+    }
+
+    .viewfinder__icons-link {
+      color: inherit;
+    }
+
+    .palette1 .viewfinder__card-title-rectangule {
+      background-color: #438792;
+    }
+
+    .palette1 .viewfinder__card-title-name {
+      color: #114e4e;
+    }
+
+    .palette1 .viewfinder__icons {
+      border-bottom-color: rgba(67, 135, 146, 0.2);
+    }
+
+    .palette1 .viewfinder__icons-box {
+      border: 2px solid #a2deaf;
+      color: #114e4e;
+    }
+
+    .palette2 .viewfinder__card-title-rectangule {
+      background-color: #bd1010;
+    }
+
+    .palette2 .viewfinder__card-title-name {
+      color: #420101;
+    }
+
+    .palette2 .viewfinder__icons {
+      border-bottom-color: rgba(189, 16, 16, 0.2);
+    }
+
+    .palette2 .viewfinder__icons-box {
+      border: 2px solid #e95626;
+      color: #420101;
+    }
+
+    .palette3 .viewfinder__card-title-rectangule {
+      background-color: #eab052;
+    }
+
+    .palette3 .viewfinder__card-title-name {
+      color: #3e5b65;
+    }
+
+    .palette3 .viewfinder__icons {
+      border-bottom-color: rgba(223, 229, 235, 0.2);
+    }
+
+    .palette3 .viewfinder__icons-box {
+      border: 2px solid #a0c0cf;
+      color: #3e5b65;
+    }
+
+    .typography1 .viewfinder__card-title-name {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .typography1 .viewfinder__card-title-job {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /*# sourceMappingURL=index.css.map */
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="viewfinder typography1 palette<%= palette %>">
+      <div class="viewfinder__card">
+        <div class="viewfinder__card-title">
+          <div class="viewfinder__card-title-rectangule"></div>
+          <div class="viewfinder__card-titlebox">
+            <h2 class="viewfinder__card-title-name">
+              <%= name %>
+            </h2>
+            <h3 class="viewfinder__card-title-job">
+              <%= job %>
+            </h3>
+          </div>
+        </div>
+        <div class="viewfinder__photo" title="Foto de la tarjeta" style="background-image: url(<%= photo %>);">
+        </div>
+        <!-- <img class="viewfinder__photo" title="Foto de la tarjeta" alt="Foto de la tarjeta" src="<%= photo %>)"> -->
+
+        <div class="viewfinder__icons">
+          <div class="viewfinder__icons-box"><a class="viewfinder__icons-link" href="tel:<%= phone %>"><i
+                class="fas fa-mobile-alt"></i></a></div>
+          <div class="viewfinder__icons-box"><a class="viewfinder__icons-link" href="mailto:<%= email %>"><i
+                class="fas fa-envelope"></i></a></div>
+          <div class="viewfinder__icons-box"><a class="viewfinder__icons-link"
+              href="http://linkedin.com/in/<%= linkedin %>"><i class="fab fa-linkedin-in"></i></a></div>
+          <div class="viewfinder__icons-box"><a class="viewfinder__icons-link" href="http://github.com/<%= github %>"><i
+                class="fab fa-github-alt"></i></a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
