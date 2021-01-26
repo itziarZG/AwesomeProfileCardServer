@@ -4,6 +4,11 @@ const express = require("express");
 const validation = require("./dataValidation/validation");
 const dataModule = require("./data/data");
 const baseURL = require("./enviroment/enviroment");
+const data = require("./data/");
+
+
+//Database
+data.init();
 
 //create server
 const app = express();
@@ -40,7 +45,7 @@ app.post("/card", (req, res) => {
   if (dataok.dataok) {
     const cardId = dataModule.write(req.body);
     response = {
-      resp: "card created",
+      resp: "card here created",
       success: true,
       cardURL: `${baseURL.baseURL}/card/${cardId}`,
     };
@@ -50,15 +55,12 @@ app.post("/card", (req, res) => {
       error: dataok.message,
     };
   }
-  console.log(response);
+  // console.log(response);
   res.status(200).json(response);
 });
 app.get("/card/:cardId", (req, res) => {
-  const data = dataModule.data.find((item) => {
-    if (item.id == req.params.cardId) return item;
-  });
-
-  if (data) res.render("TemplateCard", data.datacard);
+  const data = dataModule.read(req.params.cardId);
+  if (data) res.render("TemplateCard", data);
   else res.render("page-not-found");
 });
 

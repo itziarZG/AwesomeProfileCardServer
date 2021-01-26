@@ -1,5 +1,5 @@
-const ENDPOINT = "https://profileawesome.herokuapp.com/card";
-// const ENDPOINT = "http://localhost:3000/card";
+// const ENDPOINT = "https://profileawesome.herokuapp.com/card";
+const ENDPOINT = "http://localhost:3000/card";
 
 const getDataFromApi = (data) => {
   //
