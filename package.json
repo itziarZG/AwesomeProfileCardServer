@@ -2,7 +2,7 @@
   "name": "AwesomeProfileCardServer",
   "version": "0.1.0",
   "scripts": {
-    "start": "cd Server && npm start",
+    "start": "cd Web && npm run build && rm -rf ../Server/public && mv build ../Server/public && cd ../Server && npm start",
     "dev": "cd Server && npm run dev & cd Web && npm start",
     "install": "cd Server && rm -rf node_modules/ && npm install && cd ../Web && rm -rf node_modules/ && npm install"
   }
