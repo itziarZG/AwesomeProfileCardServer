@@ -2,9 +2,8 @@
   "name": "AwesomeProfileCardServer",
   "version": "0.1.0",
   "scripts": {
-    "start": "/Server/src/index.js"
-    // "start": "cd web && npm run build && rm -rf ../server/public && mv build ../server/public && cd ../server && npm start",
-    "dev": "cd server && npm run dev & cd web && npm start",
-    "install": "cd server && rm -rf node_modules/ && npm install && cd ../web && rm -rf node_modules/ && npm install"
+    "start": "cd Server && npm start",
+    "dev": "cd Server && npm run dev & cd Web && npm start",
+    "install": "cd Server && rm -rf node_modules/ && npm install && cd ../Web && rm -rf node_modules/ && npm install"
   }
 }
