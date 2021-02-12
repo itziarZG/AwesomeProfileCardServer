@@ -1,5 +1,5 @@
 // const baseURL = "http://localhost:3000";
-const baseURL = "https://profileawesome.herokuapp.com";
+const baseURL = "https://awesomeprofilecard.herokuapp.com";
 module.exports = {
   baseURL: baseURL,
 };
